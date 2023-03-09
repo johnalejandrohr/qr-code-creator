@@ -7,6 +7,20 @@
   font-family: 'Poppins', sans-serif;
   /* border: 1px solid red!important; */
 }
+
+a {
+  text-decoration: none;
+}
+.back {
+  color: #4e7518;
+  font-size: 1.5rem;
+  transition: 0.2s ease;
+  font-size: 2rem;
+}
+.back:hover {
+  color: #84dd08;
+}
+
 body{
   display: flex;
   padding: 0 10px;
@@ -23,8 +37,8 @@ body{
 
 }
 .wrapper{
-  min-height: 10vh;
-  min-width: 20vw;
+  min-height: 70vh;
+  max-width: 410px;
   /*background: #fff;*/
   /*background: #fffbef;*/
   background: #ffffff;
