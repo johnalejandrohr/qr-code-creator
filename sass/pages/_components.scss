@@ -1,0 +1,19 @@
+.pagecomponents {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    &__qr {
+        width: 90%;
+        min-height: 90vh;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .pagecomponents {
+        &__qr {
+            max-width: 450px; /* Ancho máximo del elemento en pantallas grandes */
+            max-height: 100vh; /* Altura máxima del elemento en pantallas grandes */
+        }
+    }
+}
