@@ -1,0 +1,17 @@
+textarea {
+    font-size: 18px;
+    padding: 0 17px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    transition: 0.1s ease;
+    border: 1px solid #eee6e6;
+}
+
+textarea:focus {
+    box-shadow: 0 3px 6px rgba(0,0,0,0.13);
+}
+
+textarea::placeholder {
+    color: #999;
+}
