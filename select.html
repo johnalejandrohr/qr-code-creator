@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="
+        https://cdn.jsdelivr.net/npm/choices.js@10.2.0/public/assets/scripts/choices.min.js"></script>
+    <link href="
+        https://cdn.jsdelivr.net/npm/choices.js@10.2.0/public/assets/styles/choices.min.css
+        " rel="stylesheet" />
+    
+        <link rel="stylesheet" href="./css/style.min.css">
+
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        body {
+            padding: 8rem;
+        }
+        .country-code {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <select id="country-code" class="country-code">
+        <option selected disabled>Selecciona un país</option>
+    </select>
+
+    <script>
+        const options = [];
+        fetch("https://restcountries.com/v3.1/all")
+            .then((response) => response.json())
+            .then((data) => {
+                console.log(data);
+                const countries = data.map((country) => {
+                    return {
+                        name: country.name.common,
+                        callingCode: country.idd.root + country?.idd?.suffixes?.[0],
+                        flag: country.flag,
+                    };
+                });
+                const sortedCountries = countries.sort((a, b) =>
+                    a.name.localeCompare(b.name)
+                );
+                sortedCountries.forEach((country) => {
+                    const { name, callingCode, flag } = country;
+                    options.push({ value: callingCode, label: `(${callingCode}) ${name} ${flag}` })
+                });
+
+
+                // Configura el objeto de opciones para el select
+                const selectConfig = {
+                    choices: options,
+                    shouldSort: false,
+                    searchEnabled: true
+                };
+
+                // Crea el select y configúralo con Choices.js
+                const select = new Choices("#country-code", selectConfig);
+            })
+            .catch((error) => console.error(error));
+
+
+
+    </script>
+</body>
+
+</html>
