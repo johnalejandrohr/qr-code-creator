@@ -6,9 +6,15 @@
   height: 100vh;
   display: flex;
   justify-content: center;
+  gap: 1rem;
+  padding: 1rem;
 }
 .pagecomponents__qr {
   width: 90%;
+  min-height: 90vh;
+}
+.pagecomponents__forms {
+  width: 60vw;
   min-height: 90vh;
 }
 
@@ -102,6 +108,65 @@ input::placeholder {
   color: #999;
 }
 
+.checkbox {
+  display: inline-block;
+  position: relative;
+  padding-left: 25px;
+  margin-bottom: 15px;
+  cursor: pointer;
+  font-size: 16px;
+  user-select: none;
+  text-align: center; /* centra horizontalmente el contenido del contenedor */
+}
+
+.checkbox input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 20px;
+  width: 20px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+}
+
+.checkbox:hover input ~ .checkmark {
+  border: 2px solid #539740;
+  transition: all 100ms ease;
+}
+
+.checkbox input:checked ~ .checkmark {
+  background-color: #539740;
+  border-color: #539740;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.checkbox input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.checkbox .checkmark:after {
+  left: 5px;
+  top: 1px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  transform: rotate(45deg);
+}
+
 textarea {
   font-size: 18px;
   padding: 0 17px;
@@ -127,10 +192,17 @@ textarea::placeholder {
 }
 .form__group {
   margin-bottom: 0px;
+  display: flex;
+  gap: 1rem;
+}
+.form__group label {
+  margin-left: 5px;
+  color: rgb(55, 56, 56);
+  font-weight: 500;
 }
 
 .btn {
-  width: 100%;
+  width: 200px;
   height: 55px;
   border: none;
   outline: none;

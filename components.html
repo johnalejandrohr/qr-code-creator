@@ -17,7 +17,7 @@
                 <a class="mt-1" href="#" id="qrEnlace" target="_blank"></a>
             </div>
             <div class="card__body">
-                <form action="" class="form">
+                <form class="form">
                     <div class="form__group">
                         <input id="code" class="mt-1" type="text" spellcheck="false" placeholder="Codigo de pais +57" value="+57" maxlength="40">
                     </div>
@@ -40,6 +40,73 @@
             </div>
         </div>
     </div>
+
+    <div class="pagecomponents__forms">
+        <div class="card">
+            <div class="card__header">
+                <a href="../index.html" class="back">&larr;</a>
+                <p class="card__header_title">Crear usuario</p>
+                <p>
+                    <a href="#">Home</a> / 
+                    <a href="#">Usuarios</a> / 
+                    Nuevo
+                </p>
+            </div>
+            <div class="card__body">
+                <form class="form">
+                    <div class="form__group mt-1">
+                        <input id="phone" type="text" spellcheck="false" placeholder="Nombres" maxlength="15">
+                        <input id="phone" type="text" spellcheck="false" placeholder="Apellidos" maxlength="15">
+                    </div>
+                    <div class="form__group mt-1">
+                        <input id="phone" type="text" spellcheck="false" placeholder="Ciudad" maxlength="15">
+                        <input id="phone" type="text" spellcheck="false" placeholder="Direccion" maxlength="15">
+                    </div>
+                    <div class="form__group mt-1">
+                        <input id="phone" type="text" spellcheck="false" placeholder="Telefono" maxlength="15">
+                        <input id="phone" type="text" spellcheck="false" placeholder="Correo" maxlength="15">
+                    </div>
+                    <div class="form__group mt-1">
+                        <label>Correo electronico</label>
+                    </div>
+                    <div class="form__group">
+                        <input id="phone" type="text" spellcheck="false" placeholder="Correo" maxlength="15">
+                    </div>
+                    <div class="form__group mt-1">
+                        <label>Fecha de nacimiento (dd/mm/aaaa)</label>
+                    </div>
+                    <div class="form__group">
+                        <input id="phone" type="number" spellcheck="false" placeholder="Dia" maxlength="15">
+                        <input id="phone" type="number" spellcheck="false" placeholder="Mes" maxlength="15">
+                        <input id="phone" type="number" spellcheck="false" placeholder="Año" maxlength="15">
+                    </div>
+                    <div class="form__group mt-1">
+                    </div>
+                    <div class="form__group">
+                        <label for="isActive" class="">Activo</label>
+                        <label class="checkbox">
+                            <input type="checkbox" id="isActive">
+                            <span class="checkmark"></span>
+                          </label>
+                          
+                    </div>
+                    <div class="form__group mt-1">
+                        <textarea id="message" name="" id="" rows="4" placeholder="Mensaje..."></textarea>
+                    </div>
+                    
+                    <div class="form__group mt-1">
+                        <a href="./wh/index.html">
+                            <button class="btn btn--primary" id="generate-qr">Generar código QR</button>
+                        </a>
+                    </div>
+                </form>
+                <div class="qr-code mt-1">
+                    <img src="" alt="qr-code" id="qr-code-img">
+                </div>
+            </div>
+        </div>
+    </div>
+
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="main.js"></script>
 </body>
