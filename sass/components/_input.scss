@@ -7,7 +7,7 @@ input {
     transition: 0.1s ease;
 }
 input {
-    font-size: 18px;
+    font-size: 14px;
     padding: 0 17px;
     border: 1px solid #eee6e6;
 }
@@ -58,8 +58,8 @@ input::placeholder {
   }
   
   .checkbox input:checked ~ .checkmark {
-    background-color: #539740;
-    border-color: #539740;
+    background-color: $color-primary;
+    border-color: $color-primary;
   }
   
   .checkmark:after {
