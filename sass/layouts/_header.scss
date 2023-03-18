@@ -1,0 +1,36 @@
+/* header  */
+.header {
+    height: 5rem;
+    background-color: $color-primary;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr;
+    opacity: .9;
+    z-index: 10;
+    position: sticky;
+    top: 0;
+    &__item {
+        &:nth-child(1) {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        &:nth-child(3) {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            a {
+                font-size: 14px;
+                font-weight: bold;
+                text-transform: uppercase;
+                letter-spacing: 2px;
+                color: $text-color;
+                width: 100%;
+                text-align: center;
+                &:hover {
+                    border-bottom: 1px solid beige;
+                }
+            }
+        }
+    }
+}

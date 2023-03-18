@@ -4,13 +4,16 @@
 // $color-primary: #84dd08;
 // $color-black: #000000;
 
-$color-primary: rgb(82, 210, 123);
+$color-primary: #767cd4;
 $color-black: #000000;
 $text-color: #ffffff;
 
 
 @import './pages/home';
 @import './pages/components';
+
+@import './layouts/header';
+@import './layouts/sidebar';
 
 @import './components/card';
 @import './components/input';

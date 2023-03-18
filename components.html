@@ -7,121 +7,203 @@
     <title>Document</title>
     <link rel="stylesheet" href="./css/style.min.css">
 </head>
-<body class="pagecomponents">
-    <div class="config">
-        <div class="config__item">
-            <div class="point1"></div>
+<body class="">
+    <header class="header">
+        <div class="header__item">
+            <a href="#" class="home">
+                <i class="bi bi-chat-heart"></i>
+            </a>
         </div>
-        <div class="config__item">
-            <div class="point2"></div>
-        </div>
-        <div class="config__item">
-            <div class="point3"></div>
-        </div>
-        <div class="config__item">
-            <div class="point4"></div>
-        </div>
-    </div>
-    <div class="pagecomponents__qr">
-        <div class="card">
-            <div class="card__header">
-                <a href="../index.html" class="back">&larr;</a>
-                <p class="card__header_title">QR Code Creator</p>
-                <p>Whatsaap</p>
-                <a class="mt-1" href="#" id="qrEnlace" target="_blank"></a>
-            </div>
-            <div class="card__body">
-                <form class="form">
-                    <div class="form__group">
-                        <input id="code" class="mt-1" type="text" spellcheck="false" placeholder="Codigo de pais +57" value="+57" maxlength="40">
-                    </div>
-                    <div class="form__group">
-                        <input id="phone" class="mt-1" type="text" spellcheck="false" placeholder="Numero de telefono 312..." maxlength="15">
-                    </div>
-                    <div class="form__group">
-                        <textarea id="message" class="mt-1" name="" id="" rows="4" placeholder="Mensaje..."></textarea>
-                    </div>
-                    
-                    <div class="form__group">
-                        <a href="./wh/index.html">
-                            <button class="btn btn--primary" id="generate-qr">Generar código QR</button>
-                        </a>
-                    </div>
-                </form>
-                <div class="qr-code mt-1">
-                    <img src="" alt="qr-code" id="qr-code-img">
-                </div>
-            </div>
-        </div>
-    </div>
+        <div class="header__item">
 
-    <div class="pagecomponents__forms">
-        <div class="card">
-            <div class="card__header">
-                <a href="../index.html" class="back">&larr;</a>
-                <p class="card__header_title">Crear usuario</p>
-                <p>
-                    <a href="#">Home</a> / 
-                    <a href="#">Usuarios</a> / 
-                    Nuevo
-                </p>
+        </div>
+        <div class="header__item">
+            <div>
+                <a href="#services">POSTS</a>
             </div>
-            <div class="card__body">
-                <form class="form">
-                    <div class="form__group mt-1">
-                        <input id="phone" type="text" spellcheck="false" placeholder="Nombres" maxlength="15">
-                        <input id="phone" type="text" spellcheck="false" placeholder="Apellidos" maxlength="15">
-                    </div>
-                    <div class="form__group mt-1">
-                        <input id="phone" type="text" spellcheck="false" placeholder="Ciudad" maxlength="15">
-                        <input id="phone" type="text" spellcheck="false" placeholder="Direccion" maxlength="15">
-                    </div>
-                    <div class="form__group mt-1">
-                        <input id="phone" type="text" spellcheck="false" placeholder="Telefono" maxlength="15">
-                        <input id="phone" type="text" spellcheck="false" placeholder="Correo" maxlength="15">
-                    </div>
-                    <div class="form__group mt-1">
-                        <label>Correo electronico</label>
-                    </div>
-                    <div class="form__group">
-                        <input id="phone" type="text" spellcheck="false" placeholder="Correo" maxlength="15">
-                    </div>
-                    <div class="form__group mt-1">
-                        <label>Fecha de nacimiento (dd/mm/aaaa)</label>
-                    </div>
-                    <div class="form__group">
-                        <input id="phone" type="number" spellcheck="false" placeholder="Dia" maxlength="15">
-                        <input id="phone" type="number" spellcheck="false" placeholder="Mes" maxlength="15">
-                        <input id="phone" type="number" spellcheck="false" placeholder="Año" maxlength="15">
-                    </div>
-                    <div class="form__group mt-1">
-                    </div>
-                    <div class="form__group">
-                        <label for="isActive" class="">Activo</label>
-                        <label class="checkbox">
-                            <input type="checkbox" id="isActive">
-                            <span class="checkmark"></span>
-                          </label>
-                          
-                    </div>
-                    <div class="form__group mt-1">
-                        <textarea id="message" name="" id="" rows="4" placeholder="Mensaje..."></textarea>
-                    </div>
-                    
-                    <div class="form__group mt-1">
-                        <a href="./wh/index.html">
-                            <button class="btn btn--primary" id="generate-qr">Generar código QR</button>
-                        </a>
-                    </div>
-                </form>
-                <div class="qr-code mt-1">
-                    <img src="" alt="qr-code" id="qr-code-img">
+            <div>
+                <div id="btn-toggle">
+                    <a href="#services">MENU</a>
                 </div>
             </div>
+        </div>
+    </header>
+    <sidebar class="sidebar" id="sidebar">
+        <div class="sidebar__brand">
+            <div class="sidebar__brand_item">
+                <p class="sidebar__brand_title">APP&MONEY</p>
+            </div>
+            <div class="sidebar__brand_item" id="btn-toggle1">
+                <i class="bi bi-grid"></i>
+            </div>
+        </div>
+        <div class="sidebar__profile">
+            <div class="sidebar__profile_item">
+                <img src="https://cdn.pixabay.com/photo/2018/08/28/12/41/avatar-3637425_960_720.png" alt="profile"
+                    class="sidebar__profile_img">
+            </div>
+            <div class="sidebar__profile_item">
+                <p class="sidebar__profile_name">Juan Perez</p>
+            </div>
+        </div>
+        <div class="sidebar__menu">
+            <ul class="list">
+                <li class="list__item a--disabled">
+                    <i class="bi bi-person"></i>
+                    <a class="a--disabled" href="#">Perfíl</a>
+                </li>
+                <li class="list__item a--disabled">
+                    <i class="bi bi-gear"></i>
+                    <a class="a--disabled" href="#">Configuracion</a>
+                </li>
+                <li class="list__item">
+                    <i class="bi bi-arrow-down"></i>
+                    <a href="./home_finance_ingresos.html">Mis Ingresos</a>
+                </li>
+                <li class="list__item">
+                    <i class="bi bi-arrow-up"></i>
+                    <a href="./home_finance.html">Mis Gastos</a>
+                </li>
+                <li class="list__item">
+                    <i class="bi bi-people"></i>
+                    <a href="./index.html">Estados</a>
+                </li>
+                <li class="list__item a--disabled">
+                    <i class="bi bi-door-open"></i>
+                    <a class="a--disabled" href="#">Salir</a>
+                </li>
+            </ul>
+        </div>
+    </sidebar>
+    <div class="pagecomponents">
+        
+        
+        <div class="config">
+            <div class="config__item">
+                <div class="point1"></div>
+            </div>
+            <div class="config__item">
+                <div class="point2"></div>
+            </div>
+            <div class="config__item">
+                <div class="point3"></div>
+            </div>
+            <div class="config__item">
+                <div class="point4"></div>
+            </div>
+        </div>
+        <div class="pagecomponents__qr">
+            <div class="card">
+                <div class="card__header">
+                    <a href="../index.html" class="back">&larr;</a>
+                    <p class="card__header_title">QR Code Creator</p>
+                    <p>Whatsaap</p>
+                    <a class="mt-1" href="#" id="qrEnlace" target="_blank"></a>
+                </div>
+                <div class="card__body">
+                    <form class="form">
+                        <div class="form__group">
+                            <input id="code" class="mt-1" type="text" spellcheck="false" placeholder="Codigo de pais +57" value="+57" maxlength="40">
+                        </div>
+                        <div class="form__group">
+                            <input id="phone" class="mt-1" type="text" spellcheck="false" placeholder="Numero de telefono 312..." maxlength="15">
+                        </div>
+                        <div class="form__group">
+                            <textarea id="message" class="mt-1" name="" id="" rows="4" placeholder="Mensaje..."></textarea>
+                        </div>
+                        
+                        <div class="form__group">
+                            <a href="./wh/index.html">
+                                <button class="btn btn--primary" id="generate-qr">Generar código QR</button>
+                            </a>
+                        </div>
+                    </form>
+                    <div class="qr-code mt-1">
+                        <img src="" alt="qr-code" id="qr-code-img">
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div class="pagecomponents__forms">
+            <div class="card">
+                <div class="card__header">
+                    <a href="../index.html" class="back">&larr;</a>
+                    <p class="card__header_title">Crear usuario</p>
+                    <p>
+                        <a href="#">Home</a> / 
+                        <a href="#">Usuarios</a> / 
+                        Nuevo
+                    </p>
+                </div>
+                <div class="card__body">
+                    <form class="form">
+                        <div class="form__group mt-1">
+                            <input id="phone" type="text" spellcheck="false" placeholder="Nombres" maxlength="15">
+                            <input id="phone" type="text" spellcheck="false" placeholder="Apellidos" maxlength="15">
+                        </div>
+                        <div class="form__group mt-1">
+                            <input id="phone" type="text" spellcheck="false" placeholder="Ciudad" maxlength="15">
+                            <input id="phone" type="text" spellcheck="false" placeholder="Direccion" maxlength="15">
+                        </div>
+                        <div class="form__group mt-1">
+                            <input id="phone" type="text" spellcheck="false" placeholder="Telefono" maxlength="15">
+                            <input id="phone" type="text" spellcheck="false" placeholder="Correo" maxlength="15">
+                        </div>
+                        <div class="form__group mt-1">
+                            <label>Correo electronico</label>
+                        </div>
+                        <div class="form__group">
+                            <input id="phone" type="text" spellcheck="false" placeholder="Correo" maxlength="15">
+                        </div>
+                        <div class="form__group mt-1">
+                            <label>Fecha de nacimiento (dd/mm/aaaa)</label>
+                        </div>
+                        <div class="form__group">
+                            <input id="phone" type="number" spellcheck="false" placeholder="Dia" maxlength="15">
+                            <input id="phone" type="number" spellcheck="false" placeholder="Mes" maxlength="15">
+                            <input id="phone" type="number" spellcheck="false" placeholder="Año" maxlength="15">
+                        </div>
+                        <div class="form__group mt-1">
+                        </div>
+                        <div class="form__group">
+                            <label for="isActive" class="">Activo</label>
+                            <label class="checkbox">
+                                <input type="checkbox" id="isActive">
+                                <span class="checkmark"></span>
+                              </label>
+                              
+                        </div>
+                        <div class="form__group mt-1">
+                            <textarea id="message" name="" id="" rows="4" placeholder="Mensaje..."></textarea>
+                        </div>
+                        
+                        <div class="form__group mt-1">
+                            <a href="./wh/index.html">
+                                <button class="btn btn--primary" id="generate-qr">Generar código QR</button>
+                            </a>
+                        </div>
+                    </form>
+                    <div class="qr-code mt-1">
+                        <img src="" alt="qr-code" id="qr-code-img">
+                    </div>
+                </div>
+            </div>
+            
         </div>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="main.js"></script>
+    <script>
+        let btn_toggle = document.querySelector('#btn-toggle');
+        btn_toggle.addEventListener('click', function() {
+            document.querySelector('.sidebar').classList.toggle('sidebar--active');
+        });
+        let btn_toggle1 = document.querySelector('#btn-toggle1');
+        btn_toggle1.addEventListener('click', function() {
+            document.querySelector('.sidebar').classList.toggle('sidebar--active');
+        });
+    </script>
 </body>
 </html>
