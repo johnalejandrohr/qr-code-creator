@@ -1,7 +1,7 @@
 /* header  */
 .header {
     height: 5rem;
-    background-color: $color-primary;
+    background-color: var(--color-primary);
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr 2fr;
@@ -24,13 +24,20 @@
                 font-weight: bold;
                 text-transform: uppercase;
                 letter-spacing: 2px;
-                color: $text-color;
+                color: var(--text-color);
                 width: 100%;
                 text-align: center;
+                text-decoration: none;
                 &:hover {
-                    border-bottom: 1px solid beige;
+                    border-bottom: 2px solid beige;
                 }
             }
         }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .header {
+        grid-template-columns: 1fr 2fr 1fr;
     }
 }

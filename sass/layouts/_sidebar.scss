@@ -23,6 +23,9 @@
     justify-content: center;
     align-items: center;
     border-bottom: 1px solid rgb(229, 215, 215);
+    background-color: var(--color-primary);
+    color: var(--text-color);
+    cursor: pointer;
 
 }
 .sidebar__brand_item {
@@ -43,7 +46,7 @@
 }
 
 .sidebar__brand_title {
-    color:#3b3f6a;
+    color: var(--text-color);
 }
 
 .sidebar__profile {
@@ -80,6 +83,9 @@ img {
 .sidebar__menu {
     min-height: 20%;
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .sidebar__menu .list {
     width: 100%;
@@ -103,7 +109,7 @@ img {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    color: $color-primary;
+    color: var(--color-primary);
     text-decoration: none;
     transition: 500ms all ease;
 }

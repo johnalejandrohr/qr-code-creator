@@ -1,15 +1,19 @@
 .config {
     width: 7rem;
     height: 2rem;
-    position: fixed;
-    right: 0;
-    top: 19%;
     display: flex;
     justify-content: space-between;
     background-color: rgb(222, 212, 234);
     border-top-left-radius: 7px;
     border-bottom-left-radius: 7px;
+    border-radius: 7px;
     padding: 5px;
+    z-index: 999;
+    &--position-fixed {
+        position: fixed;
+        right: 0;
+        top: 19%;
+    }
     &__item {
         width: 20px;
         height: 20px;

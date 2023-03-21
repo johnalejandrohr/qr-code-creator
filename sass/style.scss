@@ -4,9 +4,21 @@
 // $color-primary: #84dd08;
 // $color-black: #000000;
 
-$color-primary: #767cd4;
+// #767cd4
+// 5b8d58
+
 $color-black: #000000;
+
+$color-primary: #58658d;
 $text-color: #ffffff;
+
+
+// Definición de variables personalizadas
+:root {
+    --color-black: #{$color-black};
+    --color-primary: #{$color-primary};
+    --text-color: #{$text-color};
+  }
 
 
 @import './pages/home';
