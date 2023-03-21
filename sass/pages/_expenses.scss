@@ -1,0 +1,16 @@
+.page-expenses {
+    margin: 1rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+}
+
+@media screen and (min-width: 768px) {
+    .page-expenses {
+        margin: 1rem;
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        gap: 1rem;
+    }
+    
+}

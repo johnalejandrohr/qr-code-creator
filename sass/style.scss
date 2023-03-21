@@ -9,7 +9,7 @@
 
 $color-black: #000000;
 
-$color-primary: #58658d;
+$color-primary: #181818;
 $text-color: #ffffff;
 
 
@@ -23,6 +23,7 @@ $text-color: #ffffff;
 
 @import './pages/home';
 @import './pages/components';
+@import './pages/expenses';
 
 @import './layouts/header';
 @import './layouts/sidebar';
@@ -62,4 +63,18 @@ body {
 
 a {
     color: $color-primary;
+}
+
+
+.w-30 {
+    width: 30%;
+}
+.w-70 {
+    width: 70%;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
