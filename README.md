@@ -2,6 +2,10 @@
 
 Utiliza una [API](https://goqr.me/api/ "API")
 
+# Styles
+Para los estilos se usa el la carpeta "css/" del siguiente repositorio
+https://github.com/johnalejandrohr/jex-uikit.git
+
 ## Screenshops
 
 ### Screen home
